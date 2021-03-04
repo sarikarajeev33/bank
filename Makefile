@@ -16,11 +16,6 @@ account.o: account.c account.h memwatch.h
 memwatch.o: memwatch.c memwatch.h
 	$(CC) $(USEMEMWATCH) -c memwatch.c 
 
-memwatch.h:
-	ln -s /home/class_projects/memwatch-2.71/memwatch.h
-
-memwatch.c:
-	ln -s /home/class_projects/memwatch-2.71/memwatch.c
 
 .PHONY: clean
 clean:
